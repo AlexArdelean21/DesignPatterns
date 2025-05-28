@@ -1,0 +1,5 @@
+
+You are building a system that reads client data from different sources.
+Some data comes from XML files, others from JSON APIs.
+Design an adapter that allows both data formats to be read using a unified interface.
+Demonstrate usage by reading from both types of sources.

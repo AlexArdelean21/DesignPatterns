@@ -1,0 +1,3 @@
+Create a media player application that can play mp3 files using a basic player,
+but also supports playing mp4 and vlc formats by using adapters.
+Use a common MediaPlayer interface that all adapters conform to.

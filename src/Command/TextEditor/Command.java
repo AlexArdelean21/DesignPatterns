@@ -1,6 +1,6 @@
-package Command.ControlSystem;
+package Command.TextEditor;
 
 public interface Command {
     void execute();
-    void undO();
+    void undo();
 }

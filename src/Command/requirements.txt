@@ -1,0 +1,15 @@
+Create a text editor that supports undo and redo functionality.
+Use the Command pattern to encapsulate typing, deleting, and formatting operations.
+
+
+Avem o clasă numită TextEditor, care acționează ca Receiver și conține metodele reale de lucru cu
+ textul: inserare, ștergere și formatare.
+Pentru fiecare operație (ex: tastare, ștergere, formatare), creăm o clasă separată care implementează
+ o interfață comună numită Command, ce definește metodele execute() și undo().
+
+În metoda execute() din fiecare clasă concretă, apelăm funcțiile reale din TextEditor.
+În plus, creăm o clasă Invoker (de exemplu EditorInvoker) care reține o listă de comenzi deja executate sau anulate,
+ și care oferă funcționalități de undo() și redo().
+Comenzile sunt stocate sub forma interfeței Command, ceea ce permite Invoker-ului să le trateze într-un mod generic,
+ indiferent de tipul comenzii.
+
